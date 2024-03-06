@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4488f1ef045aa224a83af5b8a7aae8f5
+guid: e057b3b24b7a8ca4388dd54afc1def5f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,7 +124,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barco de verdad-Sheet_0
+      name: barco defi-Sheet_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1
+        x: 3
+        y: 4
         width: 128
-        height: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302f8e8bab1e61b488e1662db0af7e1e
-      internalID: -1671662026
+      spriteID: 5114ee30d41b6cc47854b008643b201b
+      internalID: 1561841257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco de verdad-Sheet_1
+      name: barco defi-Sheet_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1
+        x: 138
+        y: 4
         width: 128
-        height: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c3bbc9185ab9194a97ed59b515867ed
-      internalID: 548887777
+      spriteID: e1466c5ed77ce7c42b65eaac1ffd05ea
+      internalID: 1815410008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco de verdad-Sheet_2
+      name: barco defi-Sheet_2
       rect:
         serializedVersion: 2
-        x: 376
-        y: 1
+        x: 273
+        y: 4
         width: 128
-        height: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3ae126ea9a52b148afba2322d616307
-      internalID: 966740811
+      spriteID: 3e07c899407e21046b7901d8d3341b47
+      internalID: 1147048288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco de verdad-Sheet_3
+      name: barco defi-Sheet_3
       rect:
         serializedVersion: 2
-        x: 548
-        y: 1
+        x: 408
+        y: 4
         width: 128
-        height: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc0286e08a54844baa95e5242f4c1f6
-      internalID: -2096802443
+      spriteID: fd2748243d0add74ea7d756a1cbc41f3
+      internalID: 2012935703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barco de verdad-Sheet_4
+      name: barco defi-Sheet_4
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1
+        x: 543
+        y: 4
         width: 128
-        height: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccb96832aa7ecc0498dde182550a6bc2
-      internalID: 1809326942
+      spriteID: c187a24d62de0e74a90fa7b7fd4d622f
+      internalID: 249246887
       vertices: []
       indices: 
       edges: []
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barco de verdad-Sheet_0: -1671662026
-      barco de verdad-Sheet_1: 548887777
-      barco de verdad-Sheet_2: 966740811
-      barco de verdad-Sheet_3: -2096802443
-      barco de verdad-Sheet_4: 1809326942
+      barco defi-Sheet_0: 1561841257
+      barco defi-Sheet_1: 1815410008
+      barco defi-Sheet_2: 1147048288
+      barco defi-Sheet_3: 2012935703
+      barco defi-Sheet_4: 249246887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
