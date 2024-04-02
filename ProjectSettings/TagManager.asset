@@ -9,6 +9,10 @@ TagManager:
   - NoAtravesarObjeto
   - Item
   - collision
+  - ObjectController
+  - Generate-Events
+  - inventario
+  - inventario-com
   layers:
   - Default
   - TransparentFX

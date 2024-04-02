@@ -45,7 +45,7 @@ public class MovimientoAutomatico : MonoBehaviour
                 puntuacion = 40;
                 break;
             case "Fish5":
-                puntuacion = -15;
+                puntuacion = 50;
                 break;
             case "Fish6":
                 puntuacion = 40;
@@ -58,10 +58,10 @@ public class MovimientoAutomatico : MonoBehaviour
                 break;
 
             case "Fish9":
-                puntuacion = -15;
+                puntuacion = 100;
                 break;
             case "Fish10":
-                puntuacion = -15;
+                puntuacion = 100;
                 break;
             // Agrega más casos según sea necesario para cada objeto
             default:

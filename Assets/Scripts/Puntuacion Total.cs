@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement; // Necesario para trabajar con escenas
 public class PuntuacionTotal : MonoBehaviour
 {
     public TextMeshProUGUI textoPuntuacion;
-    public int puntuacionParaGanar = 100; // Establece el umbral de puntuación para ganar
+    public int puntuacionParaGanar = 5000; // Establece el umbral de puntuación para ganar
     public string Victoria; // Nombre de la escena de victoria
 
     private int puntuacionTotal = 0;
