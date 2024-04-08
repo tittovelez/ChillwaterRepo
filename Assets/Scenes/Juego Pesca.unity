@@ -496,7 +496,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1302,8 +1302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299aa47a1e0a28b409849385a1d3b0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 5864671654919358880, guid: 156da4b50aa7a8d48b5462c32f2d67ca, type: 3}
-  cant: 1
 --- !u!114 &523801922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babc9a5049cc8af46868b34bee9170c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidad: 0
 --- !u!1 &586993260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,7 +1454,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2057,6 +2054,7 @@ GameObject:
   - component: {fileID: 835061674}
   - component: {fileID: 835061677}
   - component: {fileID: 835061678}
+  - component: {fileID: 835061679}
   m_Layer: 0
   m_Name: Square
   m_TagString: ObjectController
@@ -2180,6 +2178,18 @@ MonoBehaviour:
   textoPuntuacion: {fileID: 815482501}
   puntuacionParaGanar: 5000
   Victoria: Victoria
+--- !u!114 &835061679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835061673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46fc0b74cb18fe45815fa2930b36fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &853379660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,7 +2365,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2595,7 +2605,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3639,7 +3649,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4079,7 +4089,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5437,7 +5447,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5512,7 +5522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973363232}
   m_LocalRotation: {x: 0.0032743867, y: -0.9998859, z: -0.00046244462, w: -0.014738866}
-  m_LocalPosition: {x: 1.9, y: -7.9, z: -0.08}
+  m_LocalPosition: {x: 3.2, y: -9.73, z: -0.08}
   m_LocalScale: {x: 0.917538, y: 0.9175378, z: 0.9175381}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5569,7 +5579,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5915,6 +5925,10 @@ PrefabInstance:
     - target: {fileID: 3783252178950176013, guid: 63b87143327352f48913553a99314d11, type: 3}
       propertyPath: m_Name
       value: Fish3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151880487224852653, guid: 63b87143327352f48913553a99314d11, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
