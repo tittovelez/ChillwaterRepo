@@ -6,19 +6,28 @@ using TMPro;
 
 public class PeAnzuelo : MonoBehaviour
 {
+    private PuntuacionTotal puntuacionTotalScript;
+    private int puntuacion;
     private Transform objetoRecoger; // Referencia al objeto con el tag "Recoger"
 
     void Start()
     {
        
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Anzuelo"))
         {
             // Guarda la referencia al objeto con el tag "Recoger"
             objetoRecoger = collision.gameObject.transform;
+        }
+        if (collision.gameObject.CompareTag("ObjectController"))
+        {
+            if (puntuacionTotalScript != null)
+            {
+                // Llama al método SumarPuntuacion() del objeto PuntuacionTotal y pasa su propia puntuación
+                puntuacionTotalScript.SumarPuntuacion(puntuacion);
+            }
         }
     }
 

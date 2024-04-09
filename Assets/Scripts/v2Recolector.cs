@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
-using UnityEngine.UI;
 using TMPro;
-
-public class Anzuelo : MonoBehaviour
+public class v2Recolector : MonoBehaviour
 {
-    
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         
     }
@@ -20,15 +23,9 @@ public class Anzuelo : MonoBehaviour
             MovimientoAutomatico pe = collision.gameObject.GetComponent<MovimientoAutomatico>();
             if (pe != null)
             {
-                pe.followobject = this.gameObject;
+                Debug.Log(pe.puntuacion);
             }
-        }
-    }
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Pez")
-        {
-            
+            Destroy(collision.gameObject);
         }
     }
 }

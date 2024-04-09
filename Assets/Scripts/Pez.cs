@@ -9,7 +9,9 @@ public class MovimientoAutomatico : MonoBehaviour
     public Transform StartPont;
     public Transform EndPoint;
     public Vector3 MoverHacia;
-    public string tagRecoger = "Recoger"; // Tag del objeto para recoger
+    public GameObject followobject;
+    public int puntuacion = 0;
+
 
     private SpriteRenderer spriteRenderer;
 
@@ -23,35 +25,34 @@ public class MovimientoAutomatico : MonoBehaviour
 
     void Update()
     {
-        ObjetoAmover.transform.position = Vector3.MoveTowards(ObjetoAmover.transform.position, MoverHacia, velocidad * Time.deltaTime);
+        if (followobject == null) {
+            ObjetoAmover.transform.position = Vector3.MoveTowards(ObjetoAmover.transform.position, MoverHacia, velocidad * Time.deltaTime);
 
-        if (ObjetoAmover.transform.position == EndPoint.position)
-        {
-            MoverHacia = StartPont.position;
-        }
-        if (ObjetoAmover.transform.position == StartPont.position)
-        {
-            MoverHacia = EndPoint.position;
-        }
-        if (MoverHacia.x > transform.position.x)
-        {
-            spriteRenderer.flipX = true;
+            if (ObjetoAmover.transform.position == EndPoint.position)
+            {
+                MoverHacia = StartPont.position;
+            }
+            if (ObjetoAmover.transform.position == StartPont.position)
+            {
+                MoverHacia = EndPoint.position;
+            }
+            if (MoverHacia.x > transform.position.x)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
         }
         else
         {
-            spriteRenderer.flipX = false;
+            Vector3 position = transform.position;
+            Vector3 targetposition = followobject.transform.position;
+            position = Vector3.Lerp(position, targetposition, 10*Time.deltaTime); 
+            transform.position = position;
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Anzuelo"))
-        {
-            if (puntuacionTotalScript != null)
-            {
-                // Llama al método SumarPuntuacion() del objeto PuntuacionTotal y pasa su propia puntuación
-                puntuacionTotalScript.SumarPuntuacion(puntuacion);
-            }
-        }
+        
     }
 }
 

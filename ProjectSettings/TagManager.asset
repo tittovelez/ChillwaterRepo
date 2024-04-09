@@ -10,9 +10,7 @@ TagManager:
   - Item
   - collision
   - ObjectController
-  - Generate-Events
-  - inventario
-  - inventario-com
+  - Pez
   layers:
   - Default
   - TransparentFX
