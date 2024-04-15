@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 public class v2Recolector : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {

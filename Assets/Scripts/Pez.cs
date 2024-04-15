@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovimientoAutomatico : MonoBehaviour
@@ -11,6 +13,7 @@ public class MovimientoAutomatico : MonoBehaviour
     public Vector3 MoverHacia;
     public GameObject followobject;
     public int puntuacion = 0;
+    public PuntuacionTotal puntuacionTotal;
 
 
     private SpriteRenderer spriteRenderer;
@@ -53,6 +56,14 @@ public class MovimientoAutomatico : MonoBehaviour
             transform.position = position;
         }
         
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "ObjectController")
+        {
+            puntuacionTotal.sumar(puntuacion);
+        }
     }
 }
 
