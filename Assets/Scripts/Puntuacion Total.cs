@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PuntuacionTotal : MonoBehaviour
 {
     public TextMeshProUGUI textoPuntuacion;
-    public int puntuacionParaGanar = 5000; // Establece el umbral de puntuación para ganar
+    public int puntuacionParaGanar = 20; // Establece el umbral de puntuación para ganar
     public string Victoria; // Nombre de la escena de victoria
     public int puntuacionactual = 0;
     private int puntuacionTotal = 0;

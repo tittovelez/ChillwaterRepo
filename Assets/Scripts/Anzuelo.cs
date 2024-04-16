@@ -23,6 +23,12 @@ public class Anzuelo : MonoBehaviour
                 pe.followobject = this.gameObject;
             }
         }
+          if (collision.gameObject.tag == "Bomba")
+        {
+            Debug.Log("patata");
+            Destroy(collision.gameObject);
+
+        }
     }
     public void OnTriggerExit2D(Collider2D collision)
     {

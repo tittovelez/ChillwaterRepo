@@ -64,6 +64,11 @@ public class MovimientoAutomatico : MonoBehaviour
         {
             puntuacionTotal.sumar(puntuacion);
         }
+        if (collision.gameObject.tag == "Bomba")
+        {
+            Destroy(this.gameObject);
+        } 
+
     }
 }
 
