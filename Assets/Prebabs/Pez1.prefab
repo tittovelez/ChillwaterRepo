@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1148550159341844141}
   - component: {fileID: 2908753567007009488}
   - component: {fileID: 6914835659772086809}
+  - component: {fileID: 7655154792861023363}
   m_Layer: 0
   m_Name: Pez1
   m_TagString: Pez
@@ -104,6 +105,9 @@ MonoBehaviour:
   StartPont: {fileID: 0}
   EndPoint: {fileID: 0}
   MoverHacia: {x: 0, y: 0, z: 0}
+  followobject: {fileID: 0}
+  puntuacion: 10
+  puntuacionTotal: {fileID: 0}
 --- !u!61 &2908753567007009488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,3 +180,16 @@ Rigidbody2D:
   m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7655154792861023363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979565673830570106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c01345d37e9fb45aa60a0d10f27469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivelpez: 1
