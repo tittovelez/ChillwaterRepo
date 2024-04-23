@@ -13,6 +13,7 @@ public class MovimientoAutomatico : MonoBehaviour
     public Vector3 MoverHacia;
     public GameObject followobject;
     public int puntuacion = 0;
+    public int nivelPez = 0;
     public PuntuacionTotal puntuacionTotal;
 
 
@@ -62,7 +63,7 @@ public class MovimientoAutomatico : MonoBehaviour
     {
         if (collision.gameObject.tag == "ObjectController")
         {
-            puntuacionTotal.sumar(puntuacion);
+        
         }
         if (collision.gameObject.tag == "Bomba")
         {

@@ -10,6 +10,9 @@ public class CamaraDown : MonoBehaviour
     public Vector3 scale = new Vector3(0, 1, 1);
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, Vector3.Scale(followobject.position + offset, scale), Time.deltaTime * velocidadfollow);
+        Vector3 newpos = Vector3.Lerp(transform.position, Vector3.Scale(followobject.position + offset, scale), Time.deltaTime * velocidadfollow);
+        newpos.x = 0;
+        transform.position = newpos;
+       
     }
 }

@@ -19,6 +19,10 @@ public class PuntuacionTotal : MonoBehaviour
     {
         puntuacionactual += puntos;
     }
+    public void restar(int puntos)
+    {
+        puntuacionactual -= puntos;
+    }
     void ActualizarTextoPuntuacion()
     {
         if (textoPuntuacion != null)

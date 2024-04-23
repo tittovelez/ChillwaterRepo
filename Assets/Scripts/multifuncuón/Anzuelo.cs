@@ -7,7 +7,7 @@ using TMPro;
 
 public class Anzuelo : MonoBehaviour
 {
-    public int lvlc = 0;
+    public int lvlc = 1;
     private bool isCKeyDisabled = false;
     public int nivelpez;
     private void Start()
@@ -23,53 +23,29 @@ public class Anzuelo : MonoBehaviour
         else if (Input.GetKey("c"))
         {
             lvlc = lvlc + 1;
+            Debug.Log ("Cebo" +  lvlc);
             if (lvlc == 3)
             {
 
                 Input.GetKey("c");
             }
         }
-        if (lvlc == 1)
-        {
-
-        }
-        if (lvlc == 2)
-        {
-
-        }
-        if (lvlc == 3)
-        {
-
-        }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Pez" && nivelpez == 1 && lvlc == 1)
+        if(collision.gameObject.tag == "Pez")
         {
             MovimientoAutomatico pe = collision.gameObject.GetComponent<MovimientoAutomatico>();
             if (pe != null)
             {
-                pe.followobject = this.gameObject;
+                if(pe.nivelPez <= lvlc)
+                {
+                    pe.followobject = this.gameObject;
+                }
+               
             }
         }
 
-        if (collision.gameObject.tag == "Pez" && nivelpez == 2 && lvlc == 2)
-        {
-            MovimientoAutomatico pe = collision.gameObject.GetComponent<MovimientoAutomatico>();
-            if (pe != null)
-            {
-                pe.followobject = this.gameObject;
-            }
-        }
-
-        if (collision.gameObject.tag == "Pez" && nivelpez == 3 && lvlc == 3)
-        {
-            MovimientoAutomatico pe = collision.gameObject.GetComponent<MovimientoAutomatico>();
-            if (pe != null)
-            {
-                pe.followobject = this.gameObject;
-            }
-        }
         if (collision.gameObject.tag == "Bomba")
         {
             Debug.Log("patata");
