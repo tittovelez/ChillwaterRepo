@@ -11,7 +11,8 @@ public class PuntuacionTotal : MonoBehaviour
     public int puntuacionParaGanar = 20; // Establece el umbral de puntuación para ganar
     public string Victoria; // Nombre de la escena de victoria
     public int puntuacionactual = 0;
-    private int puntuacionTotal = 0;
+    private int puntuacionTotal = 10;
+    
     public TextMeshProUGUI puntuacionActualtext;
 
     // Método para actualizar el texto de la puntuación
